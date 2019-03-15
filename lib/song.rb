@@ -30,18 +30,17 @@ end
 def self.artist_count
 count = 0
 @@artist_count = {}
-@@artists.each {|x| @@artist_count[:x] }
-
-@@artists.to_h 
-
-
+@@artists.each {|x| @@artist_count[x]=0 unless @@artist_count[x] 
+                      @@artist_count[artist] += 1
+				}
+	@@artis_count
 end 
 
 def self.genre_count
 @@genre_count = {}
-@@genres.map {|x| @@genre_count[:x] }
-
-
+@@genres.each {|x| @@genre_count[x]=0 unless @@genre_count[x]
+		@@genre_count[x] += 1 }
+		@@genre_count
 end
 
 end
