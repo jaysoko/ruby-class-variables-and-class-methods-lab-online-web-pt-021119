@@ -33,7 +33,7 @@ count = 0
 @@artists.each {|x| @@artist_count[x]=0 unless @@artist_count[x] 
                       @@artist_count[x] += 1
 				}
-	@@artis_count
+	@@artist_count
 end 
 
 def self.genre_count
