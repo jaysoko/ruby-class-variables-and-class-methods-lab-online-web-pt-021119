@@ -31,7 +31,7 @@ def self.artist_count
 count = 0
 @@artist_count = {}
 @@artists.each {|x| @@artist_count[x]=0 unless @@artist_count[x] 
-                      @@artist_count[artist] += 1
+                      @@artist_count[x] += 1
 				}
 	@@artis_count
 end 
